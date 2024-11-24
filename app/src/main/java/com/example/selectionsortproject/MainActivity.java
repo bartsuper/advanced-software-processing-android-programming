@@ -25,25 +25,25 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-//        EditText arrayInput = findViewById(R.id.editTextText);
-//        Button submitButton = findViewById(R.id.button);
-//        TextView resultView = findViewById(R.id.textView);
-//
-//        arrayInput.setHint("Enter integer array");
-//        resultView.setText("Input an array of integers\ne.g. 1 5 2 3 (separated with spaces)\nIt will then output the step by step process of an insertion sort algorithm");
-//
-//        SortingAlgorithm insertionSort = new SortingAlgorithm();
-//
-//        submitButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                String inputText = arrayInput.getText().toString();
-//                String result = insertionSort.insertionSort(inputText);
-//                arrayInput.setText("");
-//                arrayInput.onEditorAction(EditorInfo.IME_ACTION_DONE);
-//                resultView.setText(result);
-//            }
-//        });
+        EditText arrayInput = findViewById(R.id.editTextText);
+        Button submitButton = findViewById(R.id.button);
+        TextView resultView = findViewById(R.id.textView);
+
+        arrayInput.setHint("Enter integer array");
+        resultView.setText("Input an array of integers\ne.g. 1 5 2 3 (separated with spaces)\nIt will then output the step by step process of an insertion sort algorithm");
+
+        SortingAlgorithm insertionSort = new SortingAlgorithm();
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String inputText = arrayInput.getText().toString();
+                String result = insertionSort.insertionSort(inputText);
+                arrayInput.setText("");
+                arrayInput.onEditorAction(EditorInfo.IME_ACTION_DONE);
+                resultView.setText(result);
+            }
+        });
     }
 
     public void quit(){
