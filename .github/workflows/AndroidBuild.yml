@@ -1,6 +1,12 @@
 name: Java CI with Gradle
 on:
-  push
+  push:
+    branches:
+    - main
+    - 'feature/**'
+  pull_request:
+    branches:
+    - main
 jobs:
   test_with_gradle:
     runs-on: ubuntu-latest
