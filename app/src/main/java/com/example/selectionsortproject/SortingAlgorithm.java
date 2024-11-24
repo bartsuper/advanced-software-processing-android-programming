@@ -27,43 +27,43 @@ public class SortingAlgorithm {
         return input;
     }
 
-    public int[] parseInput(String input) {
-        String[] splitInput = input.split("\\s+");
-        int[] inputIntArr = new int[splitInput.length];
-        for (int i = 0; i < splitInput.length; i++) {
-            inputIntArr[i] = Integer.parseInt(splitInput[i]);
-        }
-        return inputIntArr;
-    }
-
-    public String insertionSort(String input) {
-        StringBuilder result = new StringBuilder();
-        result.append("your input: ").append(input).append("\n");
-        String checkedInput = checkInput(input);
-        if (!Objects.equals(checkedInput, input)) {
-            return checkedInput;
-        }
-        if (Objects.equals(checkedInput, "quit")) {
-            MainActivity main = new MainActivity();
-            main.quit();
-        }
-        int[] parsedInput = parseInput(input);
-
-        // Insertion sort algorithm
-        for (int i = 1; i < parsedInput.length; i++) {
-            int currentComp = parsedInput[i];
-            int j = i - 1;
-
-            while (j >= 0 && parsedInput[j] > currentComp) {
-                // Swap
-                parsedInput[j + 1] = parsedInput[j];
-                j -= 1;
-            }
-            parsedInput[j + 1] = currentComp;
-
-            result.append(Arrays.toString(parsedInput)).append("\n");
-        }
-
-        return result.toString();
-    }
+//    public int[] parseInput(String input) {
+//        String[] splitInput = input.split("\\s+");
+//        int[] inputIntArr = new int[splitInput.length];
+//        for (int i = 0; i < splitInput.length; i++) {
+//            inputIntArr[i] = Integer.parseInt(splitInput[i]);
+//        }
+//        return inputIntArr;
+//    }
+//
+//    public String insertionSort(String input) {
+//        StringBuilder result = new StringBuilder();
+//        result.append("your input: ").append(input).append("\n");
+//        String checkedInput = checkInput(input);
+//        if (!Objects.equals(checkedInput, input)) {
+//            return checkedInput;
+//        }
+//        if (Objects.equals(checkedInput, "quit")) {
+//            MainActivity main = new MainActivity();
+//            main.quit();
+//        }
+//        int[] parsedInput = parseInput(input);
+//
+//        // Insertion sort algorithm
+//        for (int i = 1; i < parsedInput.length; i++) {
+//            int currentComp = parsedInput[i];
+//            int j = i - 1;
+//
+//            while (j >= 0 && parsedInput[j] > currentComp) {
+//                // Swap
+//                parsedInput[j + 1] = parsedInput[j];
+//                j -= 1;
+//            }
+//            parsedInput[j + 1] = currentComp;
+//
+//            result.append(Arrays.toString(parsedInput)).append("\n");
+//        }
+//
+//        return result.toString();
+//    }
 }
