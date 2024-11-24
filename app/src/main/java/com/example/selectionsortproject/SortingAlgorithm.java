@@ -27,14 +27,14 @@ public class SortingAlgorithm {
         return input;
     }
 
-//    public int[] parseInput(String input) {
-//        String[] splitInput = input.split("\\s+");
-//        int[] inputIntArr = new int[splitInput.length];
-//        for (int i = 0; i < splitInput.length; i++) {
-//            inputIntArr[i] = Integer.parseInt(splitInput[i]);
-//        }
-//        return inputIntArr;
-//    }
+    public int[] parseInput(String input) {
+        String[] splitInput = input.split("\\s+");
+        int[] inputIntArr = new int[splitInput.length];
+        for (int i = 0; i < splitInput.length; i++) {
+            inputIntArr[i] = Integer.parseInt(splitInput[i]);
+        }
+        return inputIntArr;
+    }
 //
 //    public String insertionSort(String input) {
 //        StringBuilder result = new StringBuilder();

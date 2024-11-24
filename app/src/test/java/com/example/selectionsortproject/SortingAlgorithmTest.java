@@ -32,16 +32,15 @@ public class SortingAlgorithmTest {
         assertEquals("quit", result);
     }
 
-//    @Test
-//    public void parseInput() {
-//        int[] result = insertionSort.parseInput("1 2 3 4");
-//        Assert.assertArrayEquals(new int[]{1, 2, 3, 4}, result);
-////        assertEquals(new int[]{1, 2, 3, 4}, result);
-//        result = insertionSort.parseInput("1 2 3");
-//        Assert.assertArrayEquals(new int[]{1, 2, 3}, result);
-//        result = insertionSort.parseInput("1 2 3 4 5 6 7 8");
-//        Assert.assertArrayEquals(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, result);
-//    }
+    @Test
+    public void parseInput() {
+        int[] result = insertionSort.parseInput("1 2 3 4");
+        Assert.assertArrayEquals(new int[]{1, 2, 3, 4}, result);
+        result = insertionSort.parseInput("1 2 3");
+        Assert.assertArrayEquals(new int[]{1, 2, 3}, result);
+        result = insertionSort.parseInput("1 2 3 4 5 6 7 8");
+        Assert.assertArrayEquals(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, result);
+    }
 //
 //    @Test
 //    public void insertionSort() {
