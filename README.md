@@ -1,8 +1,9 @@
 # Insertion sort app
 This is a course project for CPSC-544. An Android application build with Android Studio using Java.
 
-The application will show all the intermidiate steps of insertion sort.
+The application will show all the intermediate steps of insertion sort.
 
+[Demo video on YouTube](https://youtube.com/shorts/WGtdSQ_21Bg)
 ## Dependencies
 This project uses:
 - JDK 21.0.5 (latest Long-Term Support (LTS) release of the Java SE Platform)
