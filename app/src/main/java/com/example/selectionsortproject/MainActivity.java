@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         TextView resultView = findViewById(R.id.textView);
 
         arrayInput.setHint("Enter integer array");
-        resultView.setText("Input an array of integers\ne.g. 1 5 2 3 (separated with spaces)\nIt will then output the step by step process of an insertion sort algorithm");
+        resultView.setText("Input an array of integers\ne.g. 1 5 2 3 (separated with spaces)\nIt will then output the step by step process of an insertion sort algorithm\n\nPlease note that your input characters have to be integers between [0 - 9],\nand your input array has to be of length [3 - 8]\nEnter quit to quit application.");
 
         SortingAlgorithm insertionSort = new SortingAlgorithm();
 
